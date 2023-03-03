@@ -6,14 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <input type="text" id="mesto">
-    <input type="text" id="tip">
-    <button onclick="search()">Search
-    </button>
+    <h1 class="naslov">Пребарувач на различни типови на бизниси</h1>
+    <p style="text-align: center; font-size: small;">Градот и типот на бизнис мора да се напишани на англиски јазик
+        поради
+        лимитации од АПИто
+        кое се користи кај оваа веб
+        апликација</p>
+    <div class="prebaruvanje">
+        <input type="text" id="mesto" class="mesto" placeholder="Град/Место">
+        <input type="text" id="tip" class="tip" placeholder="Тип на бизнис">
+        <button onclick="prebaruvaj()">Пребарувај
+        </button>
+    </div>
+    <table class="tabela nevidliva" id="tabela">
+        <tr>
+            <th>Слика</th>
+            <th>Име</th>
+            <th>Координати и локација на Google Maps</th>
+        </tr>
+    </table>
+
 </body>
 <script src="script.js"></script>
 
